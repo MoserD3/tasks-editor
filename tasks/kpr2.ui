@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KPR2Form</class>
+ <widget class="QWidget" name="KPR2Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>170</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>170</height>
+   </size>
+  </property>
+  <property name="sizeIncrement">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="margin">
+    <number>0</number>
+   </property>
+   <item row="0" column="0" rowspan="2">
+    <layout class="QGridLayout" name="gridLayout1">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label1">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>NS number:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="spinBoxNSNum">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>16777215</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label2">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>NS group number:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QSpinBox" name="spinBoxNSGroupNum">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>16777215</number>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label3">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Receive speed (ft pk):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="comboBoxReceiveSpeed">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>2.4 kbit/s</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4.8 kbit/s</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9.6 kbit/s</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label4">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>KI, channel interval size
+in selected resurce (SI):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="spinBoxInterval">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0">
+      <widget class="QLabel" name="label5">
+       <property name="minimumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>221</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>T, gap period (KI):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QSpinBox" name="spinBoxPeriod">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="2" rowspan="2">
+    <layout class="QGridLayout" name="gridLayout2">
+     <item row="0" column="0">
+      <widget class="QLabel" name="label6">
+       <property name="minimumSize">
+        <size>
+         <width>301</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>301</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>dWin, KI count, continuously provided
+within the same T:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QSpinBox" name="spinBoxKICount">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label7">
+       <property name="minimumSize">
+        <size>
+         <width>301</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>301</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Transmit speed (f t ok):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="comboBoxTransmitSpeed">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <item>
+        <property name="text">
+         <string>2.4 kbit/s</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4.8 kbit/s</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9.6 kbit/s</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>38.4 kbit/s</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="label8">
+       <property name="minimumSize">
+        <size>
+         <width>301</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>301</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Сarrier frequency of data channel (Fok):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QSpinBox" name="spinBoxCarrierFreq">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>255</number>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="0">
+      <widget class="QLabel" name="label9">
+       <property name="minimumSize">
+        <size>
+         <width>301</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>301</width>
+         <height>41</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Duration of resource allocation (subframes) (t):</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QSpinBox" name="spinBoxDuration">
+       <property name="minimumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>91</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>65535</number>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="0" column="3">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>100</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="1">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Fixed</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>17</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>18</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

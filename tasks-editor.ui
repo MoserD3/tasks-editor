@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TasksEditorClass</class>
+ <widget class="QWidget" name="TasksEditorClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1010</width>
+    <height>542</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Tasks editor</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tasks-editor.qrc">
+    <normaloff>:/new/prefix1/tasks-icon.ico</normaloff>:/new/prefix1/tasks-icon.ico</iconset>
+  </property>
+  <layout class="QGridLayout" name="gridLayoutMain">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBoxFilter">
+     <property name="minimumSize">
+      <size>
+       <width>591</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>591</width>
+       <height>55</height>
+      </size>
+     </property>
+     <property name="title">
+      <string>Filter</string>
+     </property>
+     <property name="checkable">
+      <bool>true</bool>
+     </property>
+     <property name="checked">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>18</x>
+        <y>20</y>
+        <width>554</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayoutFilter">
+       <item>
+        <widget class="QLabel" name="labelFilterNKA">
+         <property name="minimumSize">
+          <size>
+           <width>50</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>50</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>NKA:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QComboBox" name="comboBoxFilterNKA">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>70</width>
+           <height>21</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelDateFilterFrom">
+         <property name="minimumSize">
+          <size>
+           <width>61</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>61</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Date from:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEditFilterFrom">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>21</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="labelDateFilterTo">
+         <property name="minimumSize">
+          <size>
+           <width>61</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>61</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Date to:</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QDateTimeEdit" name="dateTimeEditFilterTo">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>21</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>140</width>
+           <height>21</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QTreeView" name="treeView">
+       <property name="allColumnsShowFocus">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerDefaultSectionSize">
+        <number>100</number>
+       </attribute>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QPushButton" name="pushButtonNew">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>New</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonDelete">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Delete</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonRefresh">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Refresh</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButtonSettings">
+         <property name="minimumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>160</width>
+           <height>31</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Settings...</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item row="2" column="0">
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="labelNKA">
+       <property name="minimumSize">
+        <size>
+         <width>50</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>50</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>NKA:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxNKA">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>21</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelType">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Type:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxType">
+       <property name="minimumSize">
+        <size>
+         <width>400</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>400</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="currentIndex">
+        <number>-1</number>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelName">
+       <property name="minimumSize">
+        <size>
+         <width>70</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>70</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="text">
+        <string>Name:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLineEdit" name="lineEditName">
+       <property name="minimumSize">
+        <size>
+         <width>300</width>
+         <height>21</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>2000</width>
+         <height>21</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="tasks-editor.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButtonNew</sender>
+   <signal>clicked()</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>pushButtonNew_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>872</x>
+     <y>87</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>481</x>
+     <y>378</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>comboBoxType</sender>
+   <signal>activated(int)</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>comboBoxType_itemChanged(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>479</x>
+     <y>160</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonRefresh</sender>
+   <signal>clicked()</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>pushButtonRefresh_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>812</x>
+     <y>161</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>treeView</sender>
+   <signal>clicked(QModelIndex)</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>treeView_clicked(QModelIndex)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>367</x>
+     <y>224</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonDelete</sender>
+   <signal>clicked()</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>pushButtonDelete_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>812</x>
+     <y>124</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButtonSettings</sender>
+   <signal>clicked()</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>pushButtonSettings_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>812</x>
+     <y>198</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>groupBoxFilter</sender>
+   <signal>clicked()</signal>
+   <receiver>TasksEditorClass</receiver>
+   <slot>groupBoxFilter_clicked()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>36</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>451</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>pushButtonNew_clicked()</slot>
+  <slot>comboBoxType_itemChanged(int)</slot>
+  <slot>pushButtonCancel_clicked()</slot>
+  <slot>pushButtonRefresh_clicked()</slot>
+  <slot>treeView_clicked(QModelIndex)</slot>
+  <slot>pushButtonDelete_clicked()</slot>
+  <slot>pushButtonSettings_clicked()</slot>
+  <slot>groupBoxFilter_clicked()</slot>
+ </slots>
+</ui>

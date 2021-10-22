@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SettingsForm</class>
+ <widget class="QDialog" name="SettingsForm">
+  <property name="windowModality">
+   <enum>Qt::ApplicationModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>301</width>
+    <height>170</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Settings</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="tasks-editor.qrc">
+    <normaloff>:/new/prefix1/tasks-icon.ico</normaloff>:/new/prefix1/tasks-icon.ico</iconset>
+  </property>
+  <widget class="QPushButton" name="buttonAccept">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>130</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>Accept</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="buttonCancel">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>130</y>
+     <width>111</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="groupBoxDB">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>281</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Database</string>
+   </property>
+   <widget class="QLineEdit" name="lineEditDBName">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>76</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditPassword">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>50</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelPassword">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>50</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Password:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelUser">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>24</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>User:</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEditUser">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>24</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="labelDBName">
+    <property name="geometry">
+     <rect>
+      <x>19</x>
+      <y>76</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Server:</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>lineEditUser</tabstop>
+  <tabstop>lineEditPassword</tabstop>
+  <tabstop>lineEditDBName</tabstop>
+  <tabstop>buttonAccept</tabstop>
+  <tabstop>buttonCancel</tabstop>
+ </tabstops>
+ <resources>
+  <include location="tasks-editor.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>buttonAccept</sender>
+   <signal>clicked()</signal>
+   <receiver>SettingsForm</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>65</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonCancel</sender>
+   <signal>clicked()</signal>
+   <receiver>SettingsForm</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>235</x>
+     <y>175</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>149</x>
+     <y>100</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

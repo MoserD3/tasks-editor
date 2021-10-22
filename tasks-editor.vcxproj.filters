@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{663432c1-67d3-4b87-a627-f39d2124cbaa}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{14e25107-fee3-4ea0-afe5-9b9e25a7f9f0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{fc872f17-b6bd-4c56-a38d-0880ed03ecf7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tasks">
+      <UniqueIdentifier>{4cee316e-17f7-445f-903c-5c0af745b10b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_tasks-editor.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks-editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_editor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_editor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tasks-editor.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tasks-editor.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="db.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks-model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ka-model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_tasks-model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_tasks-model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ka-model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ka-model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_settings.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_settings.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="settings.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ok-freq.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ok-freq.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_lst-model.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_lst-model.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="lst-model.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_regions.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_regions.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_call-adr.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_call-adr.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_freq-pk.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_freq-pk.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\apo.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\call-adr.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\flags.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\free-access.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\freq-pk.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\kpr2.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\ku-params.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\ms-freq.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\ok-freq.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\orc.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\regions.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\rko.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\self-noise.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\tmi.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\turnoff-ms.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="tasks\vm-count.cpp">
+      <Filter>Tasks</Filter>
+    </ClCompile>
+    <ClCompile Include="editor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="editor.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks-editor.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks-editor.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="editor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks-editor.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="db.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks-model.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ka-model.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="settings.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="settings.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\apo.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\ok-freq.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\ok-freq.h">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\self-noise.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\turnoff-ms.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\rko.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\ms-freq.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\ku-params.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\vm-count.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\flags.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\free-access.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\kpr2.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\orc.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="lst-model.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\tmi.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\regions.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\regions.h">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\call-adr.h">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\call-adr.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\freq-pk.ui">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+    <CustomBuild Include="tasks\freq-pk.h">
+      <Filter>Tasks</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_editor.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_tasks-editor.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="factory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_settings.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\apo.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_apo.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ok-freq.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\self-noise.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_self-noise.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\turnoff-ms.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_turnoff-ms.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\rko.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_rko.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\ms-freq.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ms-freq.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\ku-params.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ku-params.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\vm-count.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_vm-count.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\flags.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_flags.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\free-access.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_free-access.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\kpr2.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_kpr2.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="val3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\orc.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_orc.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="tasks\tmi.h">
+      <Filter>Tasks</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_tmi.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_regions.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_call-adr.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_freq-pk.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db-filter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="tasks-editor_ru.ts">
+      <Filter>Translation Files</Filter>
+    </None>
+    <None Include="tasks-icon.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tasks-editor.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
